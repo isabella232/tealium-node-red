@@ -6,10 +6,10 @@ Detailed documentation on Tealium Collect HTTP API can be found here: https://co
 
 ## Setup
 
-(1) Edit the node and set Tealium Account, Profile, and Datasource values.
-(2) Connect a JSON message node to the 'tealium-collect' node (*see note)
-(3) Deploy
-(4) Validate the incoming data in Tealium's EventStream Live Events monitor.
+1. Edit the node and set Tealium Account, Profile, and Datasource values.
+2. Connect a JSON message node to the 'tealium-collect' node (*see note)
+3. Deploy
+4. Validate the incoming data in Tealium's EventStream Live Events monitor.
 
 *Note: The outgoing message from a node (such as MQTT) may not be a JSON string.  Use JavaScript function node or other utility nodes to 
 create or format a JSON object before sending to tealium-collect node.
@@ -23,11 +23,9 @@ npm install node-red-contrib-tealium-collect
 
 ### Install from source
 From github:
-Navigate to the your home directory ~/.node-red/node-modules
+Navigate to the home directory ~/.node-red/node-modules
 ```sh
 git clone https://github.com/Tealium/tealium-node-red.git
-```
-```sh
 cd tealium-node-red
 npm install
 ```
