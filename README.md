@@ -4,11 +4,7 @@ This node publishes a payload of data (JSON Object) to Tealium's HTTP API.
 
 Detailed documentation on Tealium Collect HTTP API can be found here: https://community.tealiumiq.com/t5/Universal-Data-Hub/Tealium-Collect-HTTP-API/ta-p/16893
 
-## Installation
-
-The easiest way to install is through the Node-RED Palette Manager that can be found in the menu on the top right hand corner of the Node-RED ui.
-
-## Installation
+## Setup
 
 (1) Edit the node and set Tealium Account, Profile, and Datasource values.
 (2) Connect a JSON message node to the 'tealium-collect' node (*see note)
@@ -35,4 +31,6 @@ git clone https://github.com/Tealium/tealium-node-red.git
 cd tealium-node-red
 npm install
 ```
+### Screenshot
 
+![Screenshot](/doc/example-screenshot.jpg)
