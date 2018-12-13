@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('tealium-collect',{
+        category: 'output',
+        color: '#C0DEED',
+        defaults: {
+            inputAccount: {value:"", required:true},
+            inputProfile: {value:"", required:true},
+            inputDatasource: {value:"", required:false}
+        },
+        inputs:1,
+        outputs:0,
+        icon: "tealium-logo.png",
+        align: "right",
+        inputLabels: ["Expects JSON input"],
+        label: "tealium-collect"
+    });
+</script>
+
+<script type="text/x-red" data-template-name="tealium-collect">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Account</label>
+        <input type="text" id="node-input-inputAccount" placeholder="Account">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Profile</label>
+        <input type="text" id="node-input-inputProfile" placeholder="Profile">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Datasource</label>
+        <input type="text" id="node-input-inputDatasource" placeholder="Datasource">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="tealium-collect">
+    <p>Sends event data to Tealium's HTTP API endpoint (https://collect.tealiumiq.com/event)</p>
+</script>
